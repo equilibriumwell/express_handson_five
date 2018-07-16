@@ -9,7 +9,6 @@ module.exports = (sequelize, DataTypes) => {
         primaryKey: true
       },
       Name: DataTypes.STRING,
-      DateFormed: DataTypes.INTEGER
     },
     {
       timestamps: false

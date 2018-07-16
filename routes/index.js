@@ -24,7 +24,7 @@ router.post('/playlists', (req, res) => {
 });
 
 router.get('/playlists', function(req, res, next) {
-  models.artists.findAll({}).then(playlistsFound => {
+  models.playlists.findAll({}).then(playlistsFound => {
     res.render('playlists', {
       playlists: playlistsFound
     });
